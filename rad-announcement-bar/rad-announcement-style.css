@@ -1,0 +1,31 @@
+#rad-announcement-bar{
+	background-color: #30CABA;
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	z-index: 999999;
+	text-align: center;
+	color:white;
+	padding:.5em;
+}
+#rad-announcement-bar span{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+.admin-bar #rad-announcement-bar{
+	top:32px;
+}
+body{
+	margin-top: 40px;
+}
+
+#rad-announcement-bar a{
+	background-color: black;
+	color:white;
+	padding:3px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 3px;
+}
