@@ -28,6 +28,31 @@ function rad_cpt(){
 				'not_found'		=> 'No Products Found',
 		),
 	) );
+
+	//add "brands" to organize products by
+	register_taxonomy( 'brand', 'product', array(
+		'hierarchical'		=>	true,  //parent/child, like categories
+		'show_admin_column'	=> true,
+		'labels' 			=>  array(
+			'name'				=>	'Brands',
+			'singular_name'		=> 	'Brand',
+			'add_new_item'		=>	'Add New Brand',
+			'search_items'		=> 	'Search Brands',
+			'not_found'			=>	'No Brands Found',
+		),
+	) );
+	//add "features" to organize products by
+	register_taxonomy( 'feature', 'product', array(
+		'hierarchical'		=>	false, //flat, like tags
+		'show_admin_column'	=> true,
+		'labels' 			=>  array(
+			'name'				=>	'Features',
+			'singular_name'		=> 	'Feature',
+			'add_new_item'		=>	'Add New Feature',
+			'search_items'		=> 	'Search Features',
+			'not_found'			=>	'No Features Found',
+		),
+	) );
 }
 
 //no close php
