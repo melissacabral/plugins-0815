@@ -1,0 +1,21 @@
+body{
+	background-color: #696763;
+}
+.login h1 a{
+	background-image: url(../images/logo.png);
+	width: auto;
+	background-size: auto auto;
+}
+.login #wp-submit{
+	background-color: #6bcbca;
+	border: none;
+	width:100%;
+	display: inline-block;
+	padding: 1em;
+	height: auto;
+	margin-top:1em;
+	font-size: 1.2em;
+}
+.login #wp-submit:hover{
+	background-color: #FF6C7D;
+}
